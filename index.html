@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pizza, pedido, produto">
+    <meta name="author" content="vagner da silva">
+    <title>Helo Pizza</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+
+<body>
+
+
+    <a href="#" name="home"></a>
+    <header>
+        <!--logo -->
+        <a href="#"><img src="./img/logo-helloPizza.png" alt="logo marca, fatia de pizza com escrito hello pizza" ></a>
+        <!--barra de navegação-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--background pizza-->
+
+    <section class="background">
+        
+        <ul class="vantagens">
+            <li>Qualidade</li>
+            <li>Sabor</li>
+            <li>Praticidade</li>
+            <li>Agilidade</li>
+        </ul>
+    </section>
+
+
+    <section class="container-sabores">
+        <a name="sabores"></a>
+        <h2>Sabores </h2>
+        <p> Conheça os nossos <strong>6 sabores</strong> de <em>pizza</em></p>
+       
+        <!--tabela de pizzas-->
+
+        <table class="container-principal table">
+            <thead>
+                <tr>
+                    <th>PIZZAS</th>
+                    <th>QUEIJO E MOLHO</th>
+                    <th>SALADA</th>
+                    <th>CARNE</th>
+                    <th>AZEITONA/CHAMPIGNON</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MOZZARELLA</td>
+                    <td rowspan="6" class="texto-positivo">SIM</td>
+                    <td class="texto-negativo">NÃO</td>
+                    <td class="texto-negativo">NÃO</td>
+                    <td class="texto-negativo">NÃO</td>
+
+                </tr>
+                <tr>
+                    <td>CALABRESA</td>
+
+                    <td class="texto-negativo">NÃO</td>
+                    <td class="texto-positivo">SIM</td>
+                    <td class="texto-positivo">SIM</td>
+                </tr>
+                <tr>
+                    <td>PEPERONI</td>
+
+                    <td class="texto-negativo">NÃO</td>
+                    <td class="texto-positivo">SIM</td>
+                    <td class="texto-positivo">SIM</td>
+                </tr>
+                <tr>
+                    <td>MARGUERITA</td>
+
+                    <td class="texto-positivo">SIM</td>
+                    <td class="texto-positivo">SIM</td>
+                    <td class="texto-positivo">SIM</td>
+                </tr>
+                <tr>
+                    <td>PORTUGUESA</td>
+
+                    <td class="texto-positivo">SIM</td>
+                    <td class="texto-positivo">SIM</td>
+                    <td class="texto-positivo">SIM</td>
+                </tr>
+                <tr>
+                    <td>ALHO</td>
+
+                    <td class="texto-negativo">NÃO</td>
+                    <td class="texto-negativo">NÃO</td>
+                    <td class="texto-negativo">NÃO</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <section class="container-formulario container-principal">
+
+        <!--formulario contato-->
+        <h2>Contato <a name="contato"></a></h2>
+        <form class="form" action="post" oninput="total.value=(produto.valueAsNumber*30)">
+            <div class="cliente">
+                <div>
+                    <label for="nome">NOME:
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required="true">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="email">E-MAIL:
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-MAIL" required="true">
+                    </label>
+                </div>
+            </div>
+            <div class="msg">
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="500"
+                    placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <!--calculo automatico do preço da pizza-->
+
+            <div class="total">
+                <div>
+                    <label for="produto">Número de pizzas ( R$30,00 cada pizza )</label>
+                    <input type="number" name="numero de pizzas" id="produto" required="true">
+                </div>
+                <div class="footer">
+                    <label for="total">total : $
+                         <output id="total" name="total">00</output>.00
+                    </label>
+                    <label for="button">
+                        <input type="submit" value="enviar" id="button">
+                    </label>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!--rodape da pagina-->
+
+    <footer>
+        <a href="#home">Hello Pizza</a>
+        <p>Todos os direitos reservados &copy; <time datetime="2021-12-19 19:19:00">2021</time> - vagner</p>
+
+    </footer>
+</body>
+
+</html>
