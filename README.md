@@ -1,5 +1,7 @@
 # projetoSitePizzaria
 
+Click [aqui](https://vagnersilvas.github.io/projetoSitePizzaria/) para conferir o projeto.
+
 ## Página inicial
 
 ![img](https://github.com/vagnersilvas/projetoSitePizzaria/blob/main/img/home.png)
