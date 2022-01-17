@@ -1,5 +1,7 @@
 # projetoSitePizzaria
 
+[Confira o projeto aqui](http://vagnersilvas.github.io/projetoSitePizzaria)
+
 ## Página inicial
 
 ![img](https://github.com/vagnersilvas/projetoSitePizzaria/blob/main/img/home.png)
