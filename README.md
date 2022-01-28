@@ -12,4 +12,4 @@
 
 ## Formulario
 
-![img](https://github.com/vagnersilvas/projetoSitePizzaria/blob/main/img/sabores.png)
+![img](https://github.com/vagnersilvas/projetoSitePizzaria/blob/main/img/footer.png)
